@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css" media="screen" title="no title" charset="utf-8">
+	<script type="text/javascript" src="items.js" charset="utf-8"></script>
+	<script type="text/javascript" src="factorio.js" charset="utf-8"></script>
+	<title>Калькулятор Factorio</title>
+</head>
+
+<body>
+	Введите скорость производства ед/сек
+	<input id = "inpV" type="number" name="name" value="1"> Выбери сырьё
+
+	<select id="sel1" name="select2" onclick="selectFI()">
+		<option selected="selected">Выберите рецепт</option>
+	</select>
+	<img id="imgFI" src="" width="24" height="24" alt="">
+	<div id="mapCraft" class="">
+	</div>
+</body>
+<script type="text/javascript">
+	for (let prop in fi) {
+		var sel1 = document.getElementById('sel1');
+		var o = document.createElement('option');
+		o.value = prop;
+		o.text = prop;
+		sel1.options.add(o);
+		//sel1.selectedOptions[0].innerHTML
+	}
+</script>
+
+</html>
